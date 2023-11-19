@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Denpasar SmartCity | Pariwisata</title>
+</head>
+<body>
+
+    <header>
+    
+        <img src="gambar/DENPASAR-removebg-preview.png" class="brand" alt="">
+        <div class="menu-btn">
+
+        </div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="index.html">Home</a>
+                <a href="layanan.html">Layanan</a>
+                <a href="pariwisata.html">Pariwisata</a>
+                <a href="https://www.denpasarkota.go.id/">Informasi</a>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="Home">
+        <video class="video-slide" src="gambar/video 1.mp4" autoplay muted loop></video>
+
+
+        <div class="content">
+            <h1>Wisata<br><span>DENPASAR</span></h1>
+            <p>Berikut merupakan daftar tempat pariwisata terbaik di denpasar</p>
+            <a href="#">Read More</a>
+        </div>
+    </section>
+    <br>
+    <h2>DAFTAR WISTA POPULER DI DENPASAR</h2>
+    <div class="card-container">
+        <div class="card">
+            <img src="gambar/2022-10-26.jpg" alt="">
+            <div class="card-content">
+                <h3>BIG GARDEN</h3>
+                <p>Aneka koleksi patung batu yang dipajang di luar ruangan, dilengkapi taman bermain & restoran.</p>
+                <a href="https://www.biggardencornerpark.com/" class="Read">Read More</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="gambar/wisata 1.jpg" alt="">
+            <div class="card-content">
+                <h3>BAJRA SANDHI</h3>
+                <p>Monumen Bajra Sandhi atau disebut juga Monumen Perjuangan Rakyat Bali adalah monumen perjuangan rakyat Bali yang terletak di Sumerta Kelod, Kota Denpasar, Bali. Monumen ini menempati areal yang sangat luas, ada beberapa lapangan bola di sekelilingnya.</p>
+                <a href="https://www.denpasarkota.go.id/wisata/sejarah-museum-bajra-sandhi" class="Read">Read More</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="gambar/TUKAD.jpg" alt="">
+            <div class="card-content">
+                <h3>TUKAD BINDU</h3>
+                <p>Jalan kaki & jogging di taman tepi sungai, dengan kios & gerobak penjaja di pasar yang menjual kuliner ringan.</p>
+                <a href="" class="Read">Read More</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="gambar/2023-03-01.jpg" alt="">
+            <div class="card-content">
+                <h3>TAMAN PADANG GALAK</h3>
+                <p>Taman hiburan terbengkalai sejak 1990-an, dikelilingi hutan dan dengan grafiti menghiasi bangunannya.</p>
+                <a href="" class="Read">Read More</a>
+            </div>
+        </div>
+        
+    </div>
+
+    <p class="wm">© copyright 2023 Globaliti Denpasar</p>
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+        const header = document.querySelector("header");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+
+        window.addEventListener("scroll", function() {
+            header.classList.toggle("sticky", window.scrollY > 60)
+        });
+    </script>
+</body>
+</html>
